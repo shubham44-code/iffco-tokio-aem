@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/iffcotokio",
+        "create path (nt:unstructured) /content/dam/iffcotokio/jcr:content",
+        "set properties on /content/dam/iffcotokio/jcr:content\n  set cq:conf{String} to /conf/iffcotokio\n  set jcr:title{String} to \"Iffco Tokio\"\nend"
+    ]
+}

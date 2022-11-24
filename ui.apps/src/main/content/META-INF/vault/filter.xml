@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/iffcotokio/clientlibs"/>
+    <filter root="/apps/iffcotokio/components"/>
+    <filter root="/apps/iffcotokio/i18n"/>
+</workspaceFilter>

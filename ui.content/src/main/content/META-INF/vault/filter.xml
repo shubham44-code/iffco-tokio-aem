@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/iffcotokio" mode="merge"/>
+    <filter root="/content/iffcotokio" mode="merge"/>
+    <filter root="/content/dam/iffcotokio/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/iffcotokio" mode="merge"/>
+</workspaceFilter>

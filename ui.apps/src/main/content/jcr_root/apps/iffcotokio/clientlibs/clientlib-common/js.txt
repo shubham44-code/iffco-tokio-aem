@@ -1,0 +1,5 @@
+
+#base=js
+jquery.min.js
+slick.min.js
+select2.min.js
