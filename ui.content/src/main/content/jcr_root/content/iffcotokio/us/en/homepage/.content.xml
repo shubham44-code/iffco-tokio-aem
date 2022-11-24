@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-11-24T15:12:55.345+05:30"
+        cq:lastModified="{Date}2022-11-24T17:35:22.018+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/iffcotokio/settings/wcm/templates/home-page"
         jcr:primaryType="cq:PageContent"
@@ -97,10 +97,21 @@
                 <disclaimercomp
                     jcr:created="{Date}2022-11-24T13:10:14.640+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-11-24T13:10:14.640+05:30"
+                    jcr:lastModified="{Date}2022-11-24T17:35:22.013+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="iffcotokio/components/iffco-tokio-components/disclaimercomp"/>
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/disclaimercomp">
+                    <desclaimerNodes jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            descmHeading="Disclaimer:"
+                            descmText="*Above mention discounts has been computed on the basis of the rates prescribed under erstwhile Indian Motor Tariff on OD premium and are only for indicative purpose.&#xd;&#xa;&#xd;&#xa;** Terms and conditions apply. For more information on Quick Claim Settlement. Click here&#xd;&#xa;&#xd;&#xa;*** Depreciation Waiver Cover is an add-on cover with additional premium payment. Kindly refer to Product Terms and Conditions for more information.&#xd;&#xa;&#xd;&#xa;**** Road Side Assistance is an add-on cover given exclusively for online policy purchase.&#xd;&#xa;&#xd;&#xa;We take privacy seriously. Filling this form confirms that you agree to receive a sales or service call from our employees/telecallers based on information you have submitted here.&#xd;&#xa;&#xd;&#xa;IFFCO Tokio General Insurance Company Limited. Corporate Address - IFFCO Tower, Plot No.3, Sector-29, Gurgaon ,Haryana -122001. Insurance is the subject matter of the solicitation. Purchase of IFFCO Tokio General Insurance Company Limited products is purely on voluntary basis. For more details on risk factors, terms and conditions please read sales brochure carefully before concluding a sale. IRDAI Regn. No.: 106; CIN: U74899DL2000PLC107621; UAN No: ITGI/18-19/INSADVT/DIGITAL/MOTOR-04 . Toll Free Number: 1800 103 5499, Email Id: support@iffcotokio.co.in, Fax Number - 0124 - 2577923 &amp; Visit us at www.iffcotokio.co.in"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            descmHeading="Privacy Policy:"
+                            descmText="Your personal information (Vehicle Type, Registration State, Registration City, Registraion Date, Manufacturer, Model, Varient, Mobile No., Email Id) submitted will not be sold, shared or rented to others. We use this information to send updates about our company and products and contact you if requested or find it necessary. You may opt out of receiving our communication by clicking on the unsubscribed link mention in mail."/>
+                    </desclaimerNodes>
+                </disclaimercomp>
             </responsivegrid_1862039444>
         </root>
     </jcr:content>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <card
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="filter select"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Add Options For Policy Select">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                            eaem-nested="NODE_STORE"
+                            name="./desclaimerNodes">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Options"
+                                    sling:resourceType="granite/ui/components/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <accordion
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                            multiple="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Card"
+                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                            fieldLabel="Desciption"
+                                                            name="./descmText"/>
+                                                        <text
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Heading"
+                                                            name="./descmHeading"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </accordion>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </card>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
