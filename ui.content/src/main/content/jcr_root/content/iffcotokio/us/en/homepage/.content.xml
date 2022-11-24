@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-11-24T15:12:55.345+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/iffcotokio/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home Page"
+        sling:resourceType="iffcotokio/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="iffcotokio/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="iffcotokio/components/container"
+                layout="responsiveGrid"/>
+            <responsivegrid_510351133
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <maincomp
+                    jcr:created="{Date}2022-11-24T12:50:56.503+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T13:51:14.513+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/maincomp"
+                    mainCompTitle="Save upto 70%* on your           car insurance premium">
+                    <policySelectOptions jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            selectOption="hello"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            selectOption="hello2"/>
+                    </policySelectOptions>
+                </maincomp>
+            </responsivegrid_510351133>
+            <responsivegrid_729276250
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <benefitscomp
+                    jcr:created="{Date}2022-11-24T12:57:07.044+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T14:47:47.850+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/benefitscomp">
+                    <benefitCards jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            benefitsCardDesc="Quick claim settlement"
+                            benefitsCardTitle="Within 4hours**"
+                            benefitsImage="/content/dam/iffcotokio/images/benefits_img1.svg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            benefitsCardDesc="Depreciation waiver"
+                            benefitsCardTitle="cover***"
+                            benefitsImage="/content/dam/iffcotokio/images/benefits_img1.svg"/>
+                    </benefitCards>
+                </benefitscomp>
+            </responsivegrid_729276250>
+            <responsivegrid_446323876
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <testimonialscomp
+                    jcr:created="{Date}2022-11-24T13:03:02.651+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T15:12:55.342+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/testimonialscomp">
+                    <testimCards jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            testimAuthor="Me"
+                            testImComment="Best car insurance policy.Great company with good benefits."/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            testimAuthor="Me V2"
+                            testImComment="Best car insurance policy.Great company with good benefits."/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            testimAuthor="Me V3"
+                            testImComment="Best car insurance policy.Great company with good benefits."/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            testimAuthor="Me V4"
+                            testImComment="Best car insurance policy.Great company with good benefits."/>
+                    </testimCards>
+                </testimonialscomp>
+            </responsivegrid_446323876>
+            <responsivegrid_1862039444
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <disclaimercomp
+                    jcr:created="{Date}2022-11-24T13:10:14.640+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T13:10:14.640+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/disclaimercomp"/>
+            </responsivegrid_1862039444>
+        </root>
+    </jcr:content>
+</jcr:root>

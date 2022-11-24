@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2022-11-24T12:42:28.014+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/iffcotokio/settings/wcm/templates/home-page"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="iffcotokio/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="iffcotokio/components/container"
+            layout="responsiveGrid">
+            <responsivegrid
+                jcr:created="{Date}2022-11-24T11:20:27.838+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-24T11:20:27.838+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <headercomp
+                    jcr:created="{Date}2022-11-24T12:07:12.198+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T12:07:12.198+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/headercomp"/>
+            </responsivegrid>
+            <responsivegrid_510351133
+                jcr:created="{Date}2022-11-24T11:20:32.636+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-24T11:20:32.636+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid_510351133>
+            <responsivegrid_729276250
+                jcr:created="{Date}2022-11-24T11:20:40.589+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-24T11:20:40.589+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid_729276250>
+            <responsivegrid_446323876
+                jcr:created="{Date}2022-11-24T11:20:50.801+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-24T11:20:50.801+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid_446323876>
+            <responsivegrid_1862039444
+                jcr:created="{Date}2022-11-24T11:21:02.099+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-24T11:21:02.099+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid_1862039444>
+            <responsivegrid_715532018
+                jcr:created="{Date}2022-11-24T11:21:09.262+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-11-24T11:21:09.262+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <footercomp
+                    jcr:created="{Date}2022-11-24T12:42:28.008+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-24T12:42:28.008+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="iffcotokio/components/iffco-tokio-components/footercomp"/>
+            </responsivegrid_715532018>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

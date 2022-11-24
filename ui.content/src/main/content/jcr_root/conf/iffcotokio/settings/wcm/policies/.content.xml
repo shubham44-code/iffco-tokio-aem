@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -207,10 +207,13 @@
             <container jcr:primaryType="nt:unstructured">
                 <policy_1574694950110
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:lastModified="{Date}2022-11-24T11:20:09.167+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:Iffco Tokio - Content,/apps/iffcotokio/components/form/container,group:Iffco Tokio - Structure]">
+                    components="[group:General,group:Iffco Tokio - Content,/apps/iffcotokio/components/form/container,group:Iffco Tokio - Structure]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -331,14 +334,78 @@
             <page jcr:primaryType="nt:unstructured">
                 <policy
                     jcr:description="Includes the required client libraries."
+                    jcr:lastModified="{Date}2022-11-24T11:40:14.674+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Generic Page"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    clientlibs="[iffcotokio.dependencies,iffcotokio.site]"
-                    clientlibsJsHead="iffcotokio.dependencies">
+                    clientlibs="[iffcotokio.dependencies,iffcotokio.site,iffcotokio.common]"
+                    clientlibsJsHead="[iffcotokio.dependencies,iffcotokio.common]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
         </components>
     </iffcotokio>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <policy_598674078625500
+                        jcr:lastModified="{Date}2022-11-24T12:06:54.063+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/iffcotokio/components/iffco-tokio-components/headercomp">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_598674078625500>
+                    <policy_602962124617100
+                        jcr:lastModified="{Date}2022-11-24T12:32:24.963+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Footer Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/iffcotokio/components/iffco-tokio-components/footercomp">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_602962124617100>
+                    <policy_604076154820600
+                        jcr:lastModified="{Date}2022-11-24T12:50:48.115+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Main Comp Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/iffcotokio/components/iffco-tokio-components/maincomp">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_604076154820600>
+                    <policy_604416983112600
+                        jcr:lastModified="{Date}2022-11-24T12:56:32.724+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Benefits Comp"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/iffcotokio/components/iffco-tokio-components/benefitscomp">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_604416983112600>
+                    <policy_604790774398700
+                        jcr:lastModified="{Date}2022-11-24T13:02:47.331+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Testimonials Comp"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/iffcotokio/components/iffco-tokio-components/testimonialscomp">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_604790774398700>
+                    <policy_605208148460400
+                        jcr:lastModified="{Date}2022-11-24T13:09:50.623+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Disclaimer Comp"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="/apps/iffcotokio/components/iffco-tokio-components/disclaimercomp">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_605208148460400>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
 </jcr:root>

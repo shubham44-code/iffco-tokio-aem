@@ -2,10 +2,10 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:created="{Date}2018-10-22T17:08:28.689+05:30"
-        cq:createdBy="admin"
-        jcr:description="Iffco Tokio Remote Page Template"
+        cq:lastModified="{Date}2022-11-24T13:09:50.625+05:30"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/iffcotokio/settings/wcm/template-types/page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Remote SPA Page"
+        jcr:title="Main Template"
         status="enabled"/>
 </jcr:root>
