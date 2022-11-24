@@ -1,0 +1,37 @@
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='testimonialscomp'}"/>
+</sly>
+
+
+  <section id="testimonials" class="testimonials_wrapper">
+    <div class="iffcotokio__container testimonials">
+      <p class="testimonials_heading">Customer Testimonials</p>
+      <div class="testimonials_cards testimonials_cards_hmevt">
+
+
+        <sly data-sly-list="${resource.children}">
+      			<sly data-sly-test="${item.name=='testimCards'}">
+        			<sly data-sly-list.card="${item.children}">
+                              <div class="testimonial_card_wrapper">
+                                  <div class="testimonial_card">
+                                    <div class="testimonial_innercard">
+                                      <img src="/content/dam/iffcotokio/images/quote.svg" alt="quote" class="quote_img" />
+                                      <p class="testimonial_card_content">
+                                        ${card.testImComment}
+                                      </p>
+                                      <p class="testimonial_card_author">${card.testimAuthor}</p>
+                                    </div>
+                                    <img src="/content/dam/iffcotokio/images/card_bg.svg" alt="card background" class="card_bg" />
+                                    <img src="/content/dam/iffcotokio/images/man.svg" alt="man" class="man_img" />
+                                  </div>
+                                </div>
+					</sly>
+				</sly>
+			</sly>
+      </div>
+    </div>
+  </section>
+
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='testimonialscomp'}"/>
+</sly>

@@ -1,0 +1,34 @@
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='benefitscomp'}"/>
+</sly>
+
+
+  <div class="iffcotokio__container">
+    <section id="benefits" class="benefits">
+      <div class="benefits_wrapper">
+        <p class="benefits_mainheading">Key Benefits</p>
+        <div class="benefits_cards benefits_cards_hmevt">
+
+
+			<sly data-sly-list="${resource.children}">
+      			<sly data-sly-test="${item.name=='benefitCards'}">
+        			<sly data-sly-list.card="${item.children}">
+                                <div class="item">
+                                    <div class="item_innerwrap">
+                                      <img src="${card.benefitsImage}" alt="benefits img1" srcset="" />
+                                      <p class="benefits_heading">${card.benefitsCardTitle}</p>
+                                      <p class="benefits_subheading">${card.benefitsCardTitle}</p>
+                                    </div>
+                              </div>
+					</sly>
+				</sly>
+			</sly>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='benefitscomp'}"/>
+</sly>

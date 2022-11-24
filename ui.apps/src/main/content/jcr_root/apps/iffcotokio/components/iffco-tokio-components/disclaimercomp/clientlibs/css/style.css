@@ -1,0 +1,18 @@
+.disclaimer {
+  padding: 70px 0 50px 0;
+  max-width: 924px;
+}
+
+.disclaimer_heading {
+  font-size: 14px;
+  color: #000000;
+  line-height: 20px;
+  font-family: "Raleway SemiBold", sans-serif;
+}
+
+.disclaimer_content {
+  font-size: 14px;
+  color: #707070;
+  line-height: 20px;
+  font-family: "Raleway Regular", sans-serif;
+}

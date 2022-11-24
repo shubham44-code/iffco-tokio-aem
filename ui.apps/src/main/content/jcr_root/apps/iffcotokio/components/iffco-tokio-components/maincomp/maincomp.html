@@ -1,0 +1,71 @@
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='maincomp'}"/>
+</sly>
+
+
+
+  <main class="main_section_wrapper">
+    <img src="/content/dam/iffcotokio/images/main_bg.svg" alt="main-background" class="main_bg" />
+    <!-- <div class="main_section_innerwrapper"> -->
+    <!-- <img src="/assets/images/buildings.svg" alt="buildings" class="building_img" /> -->
+    <div class="iffcotokio__container main_section">
+      <!-- <img src="./assets/images/main_bg.svg" alt="main-background" class="main_bg" /> -->
+      <img src="/content/dam/iffcotokio/images/buildings.svg" alt="buildings" class="building_img" />
+      <img src="/content/dam/iffcotokio/images/car.png" alt="car" class="car_img" />
+      <img src="/content/dam/iffcotokio/images/ballon.svg" alt="ballon" class="ballon_img" />
+      <div class="main_heading_wrapper">
+        <!-- <img src="./assets/images/car.png" alt="car" class="car_img" />
+          <img src="./assets/images/ballon.svg" alt="ballon" class="ballon_img" /> -->
+        <h1 class="main_heading raleway_bold">
+${properties.mainCompTitle}
+
+        </h1>
+      </div>
+      <form class="form">
+        <p class="form_heading">
+          Get free quote
+          and buy policy instantly online
+        </p>
+        <div class="input_wrapper">
+          <label for="policy_type" class="input_label">Policy type*</label>
+          <select id="policy_type" class="policy_type_options">
+
+			<sly data-sly-list="${resource.children}">
+      			<sly data-sly-test="${item.name=='policySelectOptions'}">
+        			<sly data-sly-list.options="${item.children}">
+								<option value="${options.selectOption}">${options.selectOption}</option>
+					</sly>
+				</sly>
+			</sly>
+
+            <option value="Two wheeler">Two wheeler</option>
+            <option value="Car">Car</option>
+          </select>
+        </div>
+        <div class="input_wrapper">
+          <label for="registration_no" class="input_label">Vechile registration no*</label>
+          <input type="text" name="" id="registration_no" placeholder="Enter registration no." />
+        </div>
+        <div class="input_wrapper">
+          <label for="mobile_no" class="input_label">Mobile no..</label>
+          <input type="text" name="" id="mobile_no" placeholder="Enter mobile no." />
+        </div>
+        <div class="input_wrapper">
+          <label for="email" class="input_label">Email address.</label>
+          <input type="text" name="" id="email" placeholder="Enter email" />
+        </div>
+        <div class="input_wrapper">
+          <input type="checkbox" name="" id="form_terms" class="accept_checkbox" />
+          <label for="form_terms" class="input_label">I agree for IFFCO TOKIO to contact me through
+            phone/sms/email</label>
+        </div>
+        <button type="submit" class="get_quote_btn">GET QUOTE</button>
+      </form>
+    </div>
+    <!-- </div> -->
+  </main>
+
+
+	<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='maincomp'}"/>
+</sly>

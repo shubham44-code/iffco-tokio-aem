@@ -1,0 +1,122 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 924px;
+  margin: 0 auto;
+}
+
+/* .benefits_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+} */
+.benefits_wrapper {
+  width: 100%;
+  margin: 0 50px;
+  text-align: center;
+}
+.benefits_mainheading {
+  margin: 50px 0 36px 0;
+  font-size: 40px;
+  font-family: "Raleway Bold";
+  color: #1ab164;
+}
+
+.benefits_cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.benefits_cards .item .item_innerwrap {
+  max-width: 122px;
+}
+
+.benefits_cards .item {
+  margin: 0 50px;
+}
+
+.benefits_cards .item:first-child {
+  margin-left: 0;
+}
+
+.benefits_cards .item:last-child {
+  margin-right: 0;
+}
+/* .benefits_cards .item .item_innerwrap {
+  /* width: 122px; 
+} */
+
+/* .benefits_cards div {
+  text-align: center;
+} */
+
+.benefits_heading {
+  font-size: 11px;
+  font-family: "Raleway Bold";
+  margin: 11px 0 0 0;
+}
+
+.benefits_subheading {
+  font-size: 10px;
+  font-family: "Raleway Medium";
+}
+
+.benefits_cards {
+  display: flex;
+  align-items: center;
+}
+
+.benefits_cards .slick-track {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits_cards .slick-list {
+  width: 100% !important;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.slick-slide img {
+  display: inline-block;
+}
+
+.slick-dots li button:before {
+  color: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  color: transparent;
+}
+
+.slick-arrow {
+  width: 29px;
+  height: 29px;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 50%;
+  color: transparent;
+}
+
+.slick-arrow::before {
+  content: url(../assets/images/arrow.png);
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+}
+
+.slick-next {
+  transform: rotate(180deg);
+}
